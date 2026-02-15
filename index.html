@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galactic Flappy</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ================= MENU ================= -->
+  <div class="menu" id="menu">
+    <h1>Galactic Flappy</h1>
+
+    <div class="controls">
+      <button id="startBtn">New Game</button>
+      <button id="modeToggle">Toggle Theme</button>
+    </div>
+
+    <div class="upload">
+      <label for="avatarUpload">Upload Bird Avatar</label>
+      <input type="file" id="avatarUpload" accept="image/*" />
+    </div>
+  </div>
+
+  <!-- ================= GAME ================= -->
+  <canvas id="gameCanvas" width="480" height="640" class="hidden"></canvas>
+
+  <div class="menu hidden" id="gameOver">
+  <h1>Mission Failed</h1>
+  <p id="finalScore"></p>
+  <div class="controls">
+    <button id="restartBtn">Restart</button>
+    <button id="exitBtn">Exit</button>
+  </div>
+</div>
+
+
+  <script src="js/game.js" defer></script>
+</body>
+</html>

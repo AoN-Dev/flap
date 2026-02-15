@@ -1,0 +1,96 @@
+/* ======================================================
+   THEME VARIABLES
+====================================================== */
+:root {
+  --bg-primary: #050816;
+  --bg-secondary: #0c1024;
+  --accent: #ffe81f;
+  --danger: #ff3c38;
+  --text: #ffffff;
+}
+
+body.light {
+  --bg-primary: #e8f0ff;
+  --bg-secondary: #ffffff;
+  --accent: #002bff;
+  --danger: #ff3c38;
+  --text: #111111;
+}
+
+/* ======================================================
+   GLOBAL RESET
+====================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text);
+  overflow: hidden;
+  transition: background 0.3s ease;
+}
+
+/* ======================================================
+   MENU
+====================================================== */
+.menu {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, var(--bg-primary), var(--bg-secondary));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  z-index: 10;
+}
+
+.menu h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  color: var(--accent);
+  text-shadow: 0 0 20px var(--accent);
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--accent);
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.upload {
+  text-align: center;
+}
+
+.upload input {
+  margin-top: 0.5rem;
+}
+
+/* ======================================================
+   CANVAS
+====================================================== */
+canvas {
+  display: block;
+  margin: auto;
+  background: radial-gradient(circle at center, #111428, #050816);
+}
+
+.hidden {
+  display: none;
+}
